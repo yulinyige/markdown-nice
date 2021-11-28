@@ -10,7 +10,7 @@ function createWindow () {
 //创建浏览器窗口,宽高自定义具体大小你开心就好
 mainWindow = new BrowserWindow({width: 800, height: 600})
 
-  // 加载应用----react 打包
+  // 加载应用 ---- react 打包
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, './build/index.html'),
     protocol: 'file:',
