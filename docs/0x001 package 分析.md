@@ -18,39 +18,106 @@ TODO:
 
 TODO:
 
-- `@sitdown/juejin`
-- `@sitdown/wechat`
-- `@sitdown/zhihu`
-- `@uiw/react-codemirror`
-- `ali-oss`
-- `antd`
-- `axios`
-- `diff-match-patch`
-- `highlight.js`
-- `juice`
-- `lodash.debounce`
-- `lodash.throttle`
+- `@sitdown/juejin` 掘金文章 HTML 转 md。
+- `@sitdown/wechat` 微信文章 HTML 转 md。
+- `@sitdown/zhihu` 知乎文章 HTML 转 md。
+- `@uiw/react-codemirror` *** 网页代码编辑器。
+- `ali-oss` 阿里云 OSS SDK。
+- `antd` *** UI 库。
+- `axios` 网络请求库。
+- `diff-match-patch` 文本差异比较。
+- `highlight.js` 代码语法高亮。
+- `juice` 把 CSS 样式变成 HTML 标签内联样式。
+- `lodash.debounce`  创建一个 debounced（防抖动）函数，该函数会从上一次被调用后，延迟 `wait` 毫秒后调用 `func` 方法。 
+- `lodash.throttle` 频率限制。创建一个节流函数，在 wait 秒内最多执行 `func` 一次的函数。
 - `markdown-it` Markdown 语法转换器
-- `markdown-it-deflist`
-- `markdown-it-footnote`
-- `markdown-it-implicit-figures`
-- `markdown-it-imsize`
-- `markdown-it-katex`
-- `markdown-it-ruby`
-- `markdown-it-table-of-contents`
-- `mathjax`
-- `mobx`
-- `mobx-react`
-- `prettier`
-- `qiniu-js`
+- [`markdown-it-deflist`](https://github.com/markdown-it/markdown-it-deflis) `<dl>` 标签插件。
+- [`markdown-it-footnote`](https://www.npmjs.com/package/markdown-it-footnote)  footer 注脚插件。
+- [`markdown-it-implicit-figures`](https://github.com/markdown-it/markdown-it-footnote#readme) 将图像渲染为 `<figure><img ...></figure>` 标签。
+- [`markdown-it-imsize`](https://www.npmjs.com/package/markdown-it-imsize) 用于指定图像大小的插件。
+- [`markdown-it-katex`](https://www.npmjs.com/package/markdown-it-katex) 公式插件。
+- [`markdown-it-ruby`](https://github.com/lostandfound/markdown-it-ruby) ruby 注解解析插件。
+- [`markdown-it-table-of-contents`](https://www.npmjs.com/package/markdown-it-table-of-contents) 表格插件。
+- [`mathjax`](https://www.npmjs.com/package/mathjax) 又一个公式插件。
+- [`mobx`](https://www.npmjs.com/package/mobx) 状态管理，类似 umi。
+- [`mobx-react`](https://www.npmjs.com/package/mobx-react) 状态管理。
+- [`prettier`](https://www.npmjs.com/package/prettier) 代码格式化。
+- `qiniu-js` 七牛。
 - `react`
 - `react-dom`
-- `react-helmet`
-- `sitdown`
+- [`react-helmet`](https://www.npmjs.com/package/react-helmet) 一个 HTML 文档 head 管理工具，管理对文档头的所有更改。React Helmet 采用纯 HTML 标记并输出纯 HTML 标记，非常简单，对React初学者十分友好。
+- `sitdown` HTML 转 MD。
 
 ## devDependencies
 
 TODO:
+
+- `@babel/cli`  Babel 命令行。
+- `@babel/core` 
+- [`@storybook/react`](https://www.npmjs.com/package/@storybook/react) React组件的UI开发环境。直接看到 UI 组件的不同状态，并以交互方式开发它们。
+- `@svgr/webpack` 把 SVG 转化成 React 组件
+- `babel-core`
+- `babel-eslint`
+- [`babel-jest`](https://www.npmjs.com/package/babel-jest) 测试。
+- [`babel-loader`](https://webpack.docschina.org/loaders/babel-loader/) 此 package 允许你使用 Babel 和 webpack 转译 JavaScript 文件。
+- `babel-plugin-inline-import`
+- `babel-plugin-named-asset-import`
+- `babel-preset-react-app`
+- `bfj`
+- `case-sensitive-paths-webpack-plugin`
+- `chalk`
+- `chokidar`
+- `cross-env`
+- `css-loader`
+- `dotenv`
+- `dotenv-expand`
+- `eslint`
+- `eslint-config-airbnb`
+- `eslint-config-prettier`
+- `eslint-config-react-app`
+      "eslint-loader": "^2.1.1",
+      "eslint-plugin-babel": "^5.3.0",
+      "eslint-plugin-flowtype": "2.50.1",
+      "eslint-plugin-import": "^2.14.0",
+      "eslint-plugin-jsx-a11y": "^6.1.2",
+      "eslint-plugin-prettier": "^3.1.1",
+      "eslint-plugin-react": "^7.12.4",
+      "file-loader": "2.0.0",
+      "fork-ts-checker-webpack-plugin-alt": "0.4.14",
+      "fs-extra": "7.0.1",
+      "html-webpack-plugin": "4.0.0-alpha.2",
+      "husky": "^3.0.7",
+      "identity-obj-proxy": "3.0.0",
+      "jest": "23.6.0",
+      "jest-pnp-resolver": "1.0.2",
+      "jest-resolve": "23.6.0",
+      "jest-watch-typeahead": "^0.2.1",
+      "lint-staged": "^9.4.0",
+      "mini-css-extract-plugin": "0.5.0",
+      "optimize-css-assets-webpack-plugin": "5.0.1",
+      "pnp-webpack-plugin": "1.2.1",
+      "postcss-flexbugs-fixes": "4.1.0",
+      "postcss-loader": "3.0.0",
+      "postcss-preset-env": "6.5.0",
+      "postcss-safe-parser": "4.0.1",
+      "pretty-quick": "^1.11.1",
+      "raw-loader": "^4.0.0",
+      "react-app-polyfill": "^0.2.1",
+      "react-dev-utils": "^7.0.3",
+      "resolve": "1.10.0",
+      "sass-loader": "7.1.0",
+      "shelljs": "^0.8.3",
+      "source-map-explorer": "^2.0.1",
+      "style-loader": "0.23.1",
+      "styled-jsx": "^3.2.1",
+      "terser-webpack-plugin": "1.2.2",
+      "thread-loader": "^2.1.3",
+      "to-string-loader": "^1.1.5",
+      "url-loader": "1.1.2",
+      "webpack": "4.28.3",
+      "webpack-dev-server": "3.1.14",
+      "webpack-manifest-plugin": "2.0.4",
+      "workbox-webpack-plugin": "3.6.3"
 
 ## build
 
@@ -72,9 +139,7 @@ TODO:
 
 ## husky
 
-husky 是一个 Git Hook 工具。husky 其实就是一个为 git 客户端增加 hook 的工具。将其安装到所在仓库的过程中它会自动在 .git/ 目录下增加相应的钩子实现在 pre-commit 阶段就执行一系列流程保证每一个
-commit 的正确性。部分 cd 在 commit stage 执行的命令可以挪动到本地执行，比如 lint 检查、比如单元测试。当然，pre-commit 阶段执行的命令当然要保证其速度不要太慢，每次 commit
-都等很久也不是什么好的体验。
+husky 是一个 Git Hook 工具。husky 其实就是一个为 git 客户端增加 hook 的工具。将其安装到所在仓库的过程中它会自动在 .git/ 目录下增加相应的钩子实现在 pre-commit 阶段就执行一系列流程保证每一个 commit 的正确性。部分 cd 在 commit stage 执行的命令可以挪动到本地执行，比如 lint 检查、比如单元测试。当然，pre-commit 阶段执行的命令当然要保证其速度不要太慢，每次 commit 都等很久也不是什么好的体验。
 
 ## lint-staged
 
