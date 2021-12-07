@@ -56,70 +56,72 @@ TODO:
 - `@babel/core` 
 - [`@storybook/react`](https://www.npmjs.com/package/@storybook/react) React组件的UI开发环境。直接看到 UI 组件的不同状态，并以交互方式开发它们。
 - `@svgr/webpack` 把 SVG 转化成 React 组件
-- `babel-core`
-- `babel-eslint`
-- [`babel-jest`](https://www.npmjs.com/package/babel-jest) 测试。
-- [`babel-loader`](https://webpack.docschina.org/loaders/babel-loader/) 此 package 允许你使用 Babel 和 webpack 转译 JavaScript 文件。
-- `babel-plugin-inline-import`
-- `babel-plugin-named-asset-import`
-- `babel-preset-react-app`
-- `bfj`
-- `case-sensitive-paths-webpack-plugin`
-- `chalk`
-- `chokidar`
-- `cross-env`
-- `css-loader`
-- `dotenv`
-- `dotenv-expand`
-- `eslint`
-- `eslint-config-airbnb`
-- `eslint-config-prettier`
-- `eslint-config-react-app`
-      "eslint-loader": "^2.1.1",
-      "eslint-plugin-babel": "^5.3.0",
-      "eslint-plugin-flowtype": "2.50.1",
-      "eslint-plugin-import": "^2.14.0",
-      "eslint-plugin-jsx-a11y": "^6.1.2",
-      "eslint-plugin-prettier": "^3.1.1",
-      "eslint-plugin-react": "^7.12.4",
-      "file-loader": "2.0.0",
-      "fork-ts-checker-webpack-plugin-alt": "0.4.14",
-      "fs-extra": "7.0.1",
-      "html-webpack-plugin": "4.0.0-alpha.2",
-      "husky": "^3.0.7",
-      "identity-obj-proxy": "3.0.0",
-      "jest": "23.6.0",
-      "jest-pnp-resolver": "1.0.2",
-      "jest-resolve": "23.6.0",
-      "jest-watch-typeahead": "^0.2.1",
-      "lint-staged": "^9.4.0",
-      "mini-css-extract-plugin": "0.5.0",
-      "optimize-css-assets-webpack-plugin": "5.0.1",
-      "pnp-webpack-plugin": "1.2.1",
-      "postcss-flexbugs-fixes": "4.1.0",
-      "postcss-loader": "3.0.0",
-      "postcss-preset-env": "6.5.0",
-      "postcss-safe-parser": "4.0.1",
-      "pretty-quick": "^1.11.1",
-      "raw-loader": "^4.0.0",
-      "react-app-polyfill": "^0.2.1",
-      "react-dev-utils": "^7.0.3",
-      "resolve": "1.10.0",
-      "sass-loader": "7.1.0",
-      "shelljs": "^0.8.3",
-      "source-map-explorer": "^2.0.1",
-      "style-loader": "0.23.1",
-      "styled-jsx": "^3.2.1",
-      "terser-webpack-plugin": "1.2.2",
-      "thread-loader": "^2.1.3",
-      "to-string-loader": "^1.1.5",
-      "url-loader": "1.1.2",
-      "webpack": "4.28.3",
-      "webpack-dev-server": "3.1.14",
-      "webpack-manifest-plugin": "2.0.4",
-      "workbox-webpack-plugin": "3.6.3"
+- `babel-core` Babel 核心
+- `babel-eslint` 可以对所有有效的babel代码进行lint处理。
+- [`babel-jest`](https://www.npmjs.com/package/babel-jest) 测试
+- [`babel-loader`](https://webpack.docschina.org/loaders/babel-loader/) 此 package 允许你使用 Babel 和 webpack 转译 JavaScript 文件
+- [`babel-plugin-inline-import`](https://github.com/feats/babel-plugin-inline-import#readme) 简化导入文件的方式，比如 raw.
+- [`babel-plugin-named-asset-import`](https://github.com/facebook/create-react-app#readme) 把资源文件当做组件导入。比如：`import Logo from './logo.svg'`。
+- [`babel-preset-react-app`](https://www.npmjs.com/package/babel-preset-react-app)  Create-React-App 的 Babel 预设。
+- [`bfj`](https://www.npmjs.com/package/bfj) 异步加载大 JSON 数据。
+- [`case-sensitive-paths-webpack-plugin`](https://www.npmjs.com/package/case-sensitive-paths-webpack-plugin) 强制所有模块的路径和磁盘的实际路径完全匹配，包括强制大小写。
+- [`chalk`](https://github.com/chalk/chalk#readme) 设置 Terminal 输出的样式。
+- [`chokidar`](https://www.npmjs.com/package/chokidar) 监测文件变化。最小化且跨平台。
+- [`cross-env`](https://www.npmjs.com/package/cross-env) 跨平台运行脚本。比如 windows 环境运行 `script` 脚本就需要它。
+- [`css-loader`](https://www.npmjs.com/package/css-loader) css 加载器，像 import/require 一样，使用 import() 加载 css ，并解析它。
+- [`dotenv`](https://www.npmjs.com/package/dotenv) 加载 `.env` 配置文件。
+- [`dotenv-expand`](https://www.npmjs.com/package/dotenv-expand) 把系统的配置注入到 .env 的变量中。.env 的文件可以加入 ${expand} 变量，动态改变配置。
+- `eslint` 代码检查工具。
+- [`eslint-config-airbnb`](https://www.npmjs.com/package/eslint-config-airbnb) airbnb 的 eslint 配置。
+- `eslint-config-prettier` 关闭与 `Prettier` 冲突的 eslint 规则。
+- `eslint-config-react-app` Create-React-App 的 eslint 配置。
+- `eslint-loader` eslint 核心，以下的插件都是检查规则。
+- `eslint-plugin-babel` 针对 Babel 的 eslint 规则。
+- `eslint-plugin-flowtype` Flow type 的 eslint 规则。包含一大堆规则。
+- `eslint-plugin-import` 此插件旨在支持ES2015+（ES6+）导入/导出语法的linting，并防止出现文件路径和导入名称拼写错误的问题。
+- `eslint-plugin-jsx-a11y` JSX 元素上可访问性规则的静态 AST 检查器。
+- `eslint-plugin-prettier` eslint 会使用 prettier 规则进行检查，有差异的代码作为 eslint 问题报告。说白了就是代码检查，使用 prettier 的代码格式规则。
+- `eslint-plugin-react` React 的 eslint 规则。
+- `file-loader` webpack 插件，把图片当成组件通过 `import/require()` 直接导入文件。
+- `fork-ts-checker-webpack-plugin-alt` webpack 插件，在独立线程运行 typescript 类型检查。可以加快速度。
+- `fs-extra` 原生 `fs` 模块的扩展，增加一些文件系统操作方法，并且支持 promise。
+- `html-webpack-plugin` webpack 插件，打包 HTML 文件。
+- `husky` Git Hook 工具，用来优化提交。
+- `identity-obj-proxy` 测试工具，使用ES6代理的标识对象。用于测试琐碎的网页包导入。例如，您可以告诉 Jest 将此对象模拟为导入的 CSS 模块；然后，导入的 styles 对象上的所有类名查找都将按原样返回。
+- `jest ` 测试套件。
+- `jest-pnp-resolver`
+- `jest-resolve`
+- `jest-watch-typeahead` jest 插件，用于指定 Jest 在 watch 模式下的插件，这部分的配置我们就用 React 官方推荐的就行，基本不需要我们改动。
+- `lint-staged` 代码检查。在代码提交之前，进行代码规则检查能够确保进入git库的代码都是符合代码规则的。但是整个项目上运行 lint 速度会很慢，lint-staged 能够让 lint 只检测暂存区的文件，所以速度很快。
+- `mini-css-extract-plugin`
+- `optimize-css-assets-webpack-plugin`
+- `pnp-webpack-plugin`
+- `postcss-flexbugs-fixes`
+- `postcss-loader`
+- `postcss-preset-env`
+- `postcss-safe-parser`
+- `pretty-quick`
+- `raw-loader`
+- `react-app-polyfill`
+- `react-dev-utils`
+- `resolve`
+- `sass-loader`
+- `shelljs`
+- `source-map-explorer`
+- `style-loader`
+- `styled-jsx`
+- `terser-webpack-plugin`
+- `thread-loader`
+- `to-string-loader`
+- `url-loader`
+- `webpack`
+- `webpack-dev-server`
+- `webpack-manifest-plugin`
+- `workbox-webpack-plugin`
 
 ## build
+
+TODO:
 
 ## eslintConfig
 
